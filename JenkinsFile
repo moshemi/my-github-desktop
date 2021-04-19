@@ -1,0 +1,8 @@
+node {
+    stage("clone"){
+        git "https://github.com/moshemi/my-github-desktop.git"
+    }
+    stage("show files"){
+        bat "dir"
+    }
+}
